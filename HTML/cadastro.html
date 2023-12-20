@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../css/login.tcc.css">
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="website icon" type="png" href="../IMG/logo greenplant.png">
+ 
+</head>
+<body>
+
+  <header id="myHeader">
+
+    <!-- <div id="logo">
+        <img src="../IMG/logo greenplant.png" alt="Logo do Site">
+      </div> -->
+
+    <a href="./index.php">
+        <img src="../IMG/logo greenplant.png" alt="Logo Marca DreamScape" class="logo">
+    </a>
+    <nav class="nav">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="empresa.html" class="nav-item">Sobre</a>
+        <a href="produto.html" class="nav-item">Produto</a>
+        <a href="praga.html" class="nav-item">Pragas</a>
+        <a href="epi.html" class="nav-item">EPI'S</a>
+        <a href="login.html" class="nav-item">Login</a>
+        <a href="cadastro.html" class="nav-item">Cadastro</a>
+        
+        <span class="nav-indicator"></span>
+    </nav>
+</header>
+    
+<div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    
+    <div class="content">      
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+          
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" />
+          </p>
+          
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@gmail.com"/> 
+          </p>
+          
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234"/>
+          </p>
+          
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+          
+          <p class="link">  
+            Já tem conta?
+            <a href="./login.html"> Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div> 
+
+    
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <ul>
+                   <img src="../img/logo greenplant.png" width="30%" height="30%">
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>termos de serviço</h4>
+                <ul>
+                    <a href="#" class="termos">Nossos termos de serviço</a>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-whatsapp"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer-bottom">
+    <p>copyright &copy;2023 codeOpacity. designed by <span>Developers</span></p>
+</div>
+
+  
+<script src="../JS/header.js"></script>
+</body>
+</html>

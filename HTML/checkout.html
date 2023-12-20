@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="../IMG/logo greenplant.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="../JS/header.js" defer></script>
+    <script src="../JS/checkout.js" defer></script>
+
+    <link rel="stylesheet" href="../CSS/checkout.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+ 
+
+    <title>Checkout</title>
+</head>
+<body>
+
+  <header id="myHeader">
+
+    <!-- <div id="logo">
+        <img src="../IMG/logo greenplant.png" alt="Logo do Site">
+      </div> -->
+
+    <a href="./index.php">
+        <img src="../IMG/logo greenplant.png" alt="Logo Marca DreamScape" class="logo">
+    </a>
+    <nav class="nav">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="empresa.html" class="nav-item">Sobre</a>
+        <a href="produto.html" class="nav-item">Produto</a>
+        <a href="praga.html" class="nav-item">Pragas</a>
+        <a href="epi.html" class="nav-item">EPI'S</a>
+        <a href="login.html" class="nav-item">Login</a>
+        <a href="cadastro.html" class="nav-item">Cadastro</a>
+        
+        <span class="nav-indicator"></span>
+    </nav>
+</header>
+
+    <div class="checkout-panel">
+        <div class="panel-body">
+          <h2 class="title">Informações de pagamento</h2>
+       
+          <div class="progress-bar">
+            <div class="step active"></div>
+            <div class="step active"></div>
+            <div class="step"></div>
+            <div class="step"></div>
+          </div>
+       
+          <div class="payment-method">
+            <label for="card" class="method card">
+              <div class="card-logos">
+                <img src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png"/>
+                <img src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png"/>
+              </div>
+       
+              <div class="radio-input">
+                <input id="card" type="radio" name="payment">
+                Pague R$50.00 com o Cartão De Crédito
+              </div>
+            </label>
+       
+            <label for="paypal" class="method paypal">
+              <img src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png"/>
+              <div class="radio-input">
+                <input id="paypal" type="radio" name="payment">
+                Pague R$50.00 com o PayPal
+              </div>
+            </label>
+          </div>
+       
+          <div class="input-fields">
+            <div class="column-1">
+              <label for="cardholder">Nome</label>
+              <input type="text" id="cardholder" />
+       
+              <div class="small-inputs">
+                <div>
+                  <label for="date">Data de validade</label>
+                  <input type="text" id="date"/>
+                </div>
+       
+                <div>
+                  <label for="verification">CVV / CVC *</label>
+                  <input type="password" id="verification"/>
+                </div>
+              </div>
+       
+            </div>
+            <div class="column-2">
+              <label for="cardnumber">Número do cartão</label>
+              <input type="password" id="cardnumber"/>
+       
+              <span class="info">* CVV ou CVC é o código de segurança do cartão, um número exclusivo de três dígitos no verso do seu cartão, separado do número.</span>
+            </div>
+          </div>
+        </div>
+       
+        <div class="panel-footer">
+          <button class="btn back-btn">Voltar</button>
+          <a href="confirmação.html">
+            <button class="btn next-btn">Próximo</button>
+          </a>
+          
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                       <img src="../img/logo greenplant.png" width="30%" height="30%">
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>termos de serviço</h4>
+                    <ul>
+                        <a href="#" class="termos">Nossos termos de serviço</a>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fab fa-whatsapp"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 codeOpacity. designed by <span>Developers</span></p>
+    </div>
+         
+      
+      
+</body>
+</html>

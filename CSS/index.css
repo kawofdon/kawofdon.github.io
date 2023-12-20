@@ -1,0 +1,275 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #F6F9FF;
+  }
+
+.img-principal{
+    background-image: url('../IMG/homem-inseticida2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /* 100% da altura da viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* filter: grayscale(25%);
+    filter: blur(2px); */
+}
+
+.img-principal h1{
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
+    align-items: center; /* centraliza o conteúdo verticalmente */
+}
+
+.img-principal::before {
+    filter: grayscale(25%) blur(2px);
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo da div */
+}
+
+/* .green{
+    font-size: 90px;
+    font-family: 'Bree Serif', serif;
+    color:	#00ff84;
+}
+
+.plant{
+    font-size: 90px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(255, 255, 255);
+} */
+
+/*CABEÇALHO*/
+.nav {
+    display: inline-flex;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: none;
+    padding: 0 20px;
+    border-radius: 40px;
+    /* box-shadow: 0 10px 40px rgba(159, 162, 177, .8); */
+    margin-left: 0px;
+    margin-top: 15px;
+    
+  }
+  
+.nav-item {
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  transition: .3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  position: relative;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: .3s;
+  }
+}
+
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+
+.nav-item:not(.is-active):hover { color: #ffffff; }
+
+.nav-indicator {
+  position: absolute;
+  /* left: 0;
+  bottom: 0; */
+  height: 4px;
+  transition: .4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 580px) {
+  .nav { overflow: auto; }
+}
+  
+
+.logo{
+  margin-top: -60px;
+  position: absolute;
+  left: 750px;
+}
+
+.logo2{
+  position: absolute;
+  left: 300px;
+  top: 250px;
+}
+
+
+.img-principal p{
+    font-size: 35px;
+    position: relative;
+    align-self: center;
+    left: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-principal h1{
+    position: relative;
+    align-self: center;
+    left: 750px;
+    top: -100px;
+}
+
+.arrow-down {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid #ffffff; /* cor da seta, você pode ajustar conforme necessário */
+  margin-top: 900px;
+  left: 930px;
+  animation: seta_infinita 2s infinite alternate;
+  transition: border-top 0.3s ease-in-out;
+}
+
+/*Animação*/
+@keyframes seta_infinita{
+  0%{
+      transform: translateY(20px)
+  }
+
+  100%{
+      transform: translateY(0);
+  }
+}
+
+
+.bv{
+  position: relative;
+}
+
+.bv h1{
+    color: #027333;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.linha{
+  content: "";
+  border-top: 5px double #27b304;
+  width: 100px;
+  left:655px;
+  top: 30px;
+}
+
+.bv p{
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.card-c {
+  position: relative;
+  max-width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  height: 300px;
+  padding-top: 40px;
+}
+
+.card-c p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.card-c:hover {
+  transform: scale(1.05);
+  border: 2px solid #27b304;
+  cursor: default;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*VER MAIS CARDS*/
+/* Popup */
+.card-pop-up {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0000;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000; 
+  border-radius: 10px;
+}
+
+.card-pop-up::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1200px;
+  margin: -600px;
+  background-color: #02733370;
+  cursor: none;
+
+}
+
+.conteudo-popup {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 80%;
+  text-align: center;
+  position: relative;
+  z-index: 1001; /* Garante que o conteúdo fique sobre o fundo preto */
+  margin: auto; /* Centraliza o conteúdo na tela */
+}
+
+.conteudo-popup img {
+  max-width: 100%;
+  height: auto;
+}
+
+.conteudo-popup button {
+  margin-top: 15px;
+}
+#span{
+  float: left;
+  height: 100%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.popupLink:hover{
+  background-color: white;
+  border: black solid 2px;
+}

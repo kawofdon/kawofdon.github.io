@@ -1,0 +1,134 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+/*CABEÇALHO*/
+.nav {
+    display: inline-flex;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: none;
+    padding: 0 20px;
+    border-radius: 40px;
+    /* box-shadow: 0 10px 40px rgba(159, 162, 177, .8); */
+    margin-left: 0px;
+    margin-top: 15px;
+    
+  }
+  
+.nav-item {
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  transition: .3s;
+  margin: 0 6px;
+  z-index: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  position: relative;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: .3s;
+  }
+}
+
+.nav-item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}
+
+
+.nav-item:not(.is-active):hover { color: #ffffff; }
+
+.nav-indicator {
+  position: absolute;
+  /* left: 0;
+  bottom: 0; */
+  height: 4px;
+  transition: .4s;
+  height: 5px;
+  z-index: 1;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 580px) {
+  .nav { overflow: auto; }
+}
+  
+
+
+header{
+    /* backdrop-filter: blur(10px); */
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100px;
+    z-index: 1;
+    top: -0%;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    backdrop-filter: opacity(200px);
+
+}
+
+.logo{
+  margin-top: -60px;
+  position: absolute;
+  left: 750px;
+  width: 11%;
+}
+
+.user-name{
+  position: absolute;
+  color: #ffffff;
+  left: 1400px;
+  top: 90px;
+  font-family: "Roboto", sans-serif;
+}
+
+.iuser{
+  /* background-color: white; */
+  position: absolute;
+  left: 1430px;
+}
+
+.img-principal p{
+    font-size: 25px;
+    position: relative;
+    align-self: center;
+    left: 260px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-principal h1{
+    position: relative;
+    align-self: center;
+    left: 750px;
+    top: -100px;
+}
+
+.arrow-down {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid rgb(0, 0, 0);
+    top: -200px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+

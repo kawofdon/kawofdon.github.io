@@ -1,0 +1,56 @@
+
+body{
+
+    margin-top: 8%;
+    background-color:  #F6F9FF;
+    
+}
+
+
+#status-pedido {
+
+    font-size: 20px;
+    
+    background: green;
+    
+    color: #fff;
+    
+    padding: 26px;
+    
+    width: 100%;
+    
+    
+    }
+    
+    @media screen and (min-width: 30em) {
+    
+    .w-70 {
+    
+    width: 70%;
+    
+    }
+    
+    }
+    
+    #bloco-confirma {
+    
+    border-radius: .5rem;
+    
+    background: #e8fdf5;
+    
+    padding: 2rem;
+    
+    border: 1px solid #19a974;
+    
+    }
+
+    h1{
+        font-family: sans-serif;
+        
+    }
+
+
+    
+
+
+    
