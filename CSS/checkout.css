@@ -237,5 +237,71 @@
   .warning {
     border-color: #1abc9c;
   }
+@media only screen and (max-width: 400px) {
+  .checkout-panel {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+  }
+  
+  .panel-body {
+    padding: 20px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .progress-bar {
+    margin-bottom: 30px;
+  }
+
+  .step {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .step:after {
+    top: 4px;
+    left: 18px;
+    width: 180px;
+  }
+
+  .method {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .card-logos {
+    width: 120px;
+  }
+
+  .radio-input {
+    margin-top: 10px;
+  }
+
+  .input-fields {
+    flex-direction: column;
+  }
+
+  .small-inputs {
+    flex-direction: column;
+  }
+
+  .small-inputs div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .panel-footer {
+    padding: 0 20px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
 
   
