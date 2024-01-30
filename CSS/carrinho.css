@@ -245,3 +245,40 @@ color: #dad9d9;
 .termos:hover{
 color: #bbbbbb;
 }
+@media only screen and (max-width: 400px) and (max-height: 800px) {
+
+  /* Ajustes específicos para telas menores */
+
+  header {
+    height: 60px; /* Reduz a altura do cabeçalho */
+  }
+
+  .logo {
+    left: 50%; /* Centraliza o logo na tela */
+    transform: translateX(-50%);
+    width: 80%; /* Ajusta a largura do logo */
+    margin-top: -10px; /* Ajusta a margem superior do logo */
+  }
+
+  .user-name {
+    left: 50%; /* Centraliza o nome do usuário na tela */
+    transform: translateX(-50%);
+    top: 40px; /* Ajusta a posição vertical do nome do usuário */
+  }
+
+  .nav {
+    margin-top: 10px; /* Ajusta a margem superior do menu de navegação */
+  }
+
+  .footer {
+    margin-top: 10%; /* Ajusta a margem superior do rodapé */
+  }
+
+  .container {
+    margin-left: 5%; /* Ajusta a margem esquerda dos contêineres */
+  }
+
+  .footer-col {
+    margin-left: 5%; /* Ajusta a margem esquerda das colunas do rodapé */
+  }
+}
