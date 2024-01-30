@@ -545,7 +545,33 @@
   cursor: pointer;
   background-color: #000;
 }
-  #image-container {
+@media only screen and (max-width: 400px) and (max-height: 800px) {
+  body {
+    font-size: 14px; /* Tamanho de fonte menor para telas menores */
+  }
+
+  .container {
+    padding-left: 10px; /* Ajuste de espaçamento lateral para telas menores */
+    padding-right: 10px;
+  }
+
+  .col-2 img {
+    padding: 20px 0; /* Ajuste de espaçamento interno para telas menores */
+  }
+
+  .btn-new,
+  .btn-carrinho {
+    width: 100%; /* Botões ocupam a largura total na tela menor */
+  }
+
+  #toggle-button {
+    top: 5px; /* Ajuste da posição do botão para telas menores */
+    left: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+        #image-container {
             position: relative;
         }
 
