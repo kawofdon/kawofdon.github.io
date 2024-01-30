@@ -154,7 +154,7 @@
 <script src="../JS/header.js"></script>
 </html>
 <script>
-var currentImage = 0; // Inicia com a imagem 1 exibida
+var currentImage = 2; // Inicia com a imagem 1 exibida
 var intervalId;
 
 function toggleImage() {
@@ -173,7 +173,7 @@ function toggleImage() {
 }
 
 // Inicia a troca automática a cada 5 segundos (5000 milissegundos)
-intervalId = setInterval(toggleImage, 5000);
+intervalId = setInterval(toggleImage, 3000);
 
 // Adiciona evento para pausar a troca automática ao passar o mouse sobre a imagem
 var imageContainer = document.getElementById('image-container');
@@ -183,7 +183,7 @@ imageContainer.addEventListener('mouseover', function() {
 
 // Adiciona evento para retomar a troca automática ao retirar o mouse da imagem
 imageContainer.addEventListener('mouseout', function() {
-    intervalId = setInterval(toggleImage, 5000); // Reinicia a troca automática
+    intervalId = setInterval(toggleImage, 3000); // Reinicia a troca automática
 });
 </script>
 
