@@ -132,3 +132,47 @@ header{
     z-index: 1;
 }
 
+@media only screen and (max-width: 400px) and (max-height: 800px) {
+
+  /* Ajustes específicos para telas menores */
+
+  header {
+    height: 80px; /* Reduz a altura do cabeçalho */
+  }
+
+  .logo {
+    left: 50%; /* Centraliza o logo na tela */
+    transform: translateX(-50%);
+    width: 80%; /* Ajusta a largura do logo */
+  }
+
+  .user-name {
+    left: 50%; /* Centraliza o nome do usuário na tela */
+    transform: translateX(-50%);
+    top: 60px; /* Ajusta a posição vertical do nome do usuário */
+  }
+
+  .iuser {
+    left: 50%; /* Centraliza o ícone do usuário na tela */
+    transform: translateX(-50%);
+  }
+
+  .img-principal p {
+    left: 50%; /* Centraliza o parágrafo na tela */
+    transform: translateX(-50%);
+    font-size: 18px; /* Reduz o tamanho da fonte */
+  }
+
+  .img-principal h1 {
+    left: 50%; /* Centraliza o título na tela */
+    transform: translateX(-50%);
+    top: -50px; /* Ajusta a posição vertical do título */
+  }
+
+  .arrow-down {
+    left: 50%; /* Centraliza a seta na tela */
+    transform: translateX(-50%);
+    top: -120px; /* Ajusta a posição vertical da seta */
+  }
+}
+
