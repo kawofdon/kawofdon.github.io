@@ -545,3 +545,33 @@
   cursor: pointer;
   background-color: #000;
 }
+  #image-container {
+            position: relative;
+        }
+
+        #toggle-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #3498db;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+
+        #toggle-button:hover {
+            background-color: #2980b9;
+        }
+
+        #toggle-button:focus {
+            outline: none;
+        }
+
+        .circle-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
