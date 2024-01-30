@@ -290,3 +290,40 @@ h2{
   margin-top: 10%;
   margin-left: -50%;
 }
+@media only screen and (max-width: 400px) {
+    .img-principal,
+    .img-praga-epi {
+        height: auto;
+        min-height: 100vh;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .img-principal h1,
+    .pragas,
+    .bv h1 {
+        font-size: 30px;
+    }
+
+    .img-principal::before {
+        filter: grayscale(25%) blur(2px);
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .container-teste .card {
+        gap: 10px;
+    }
+
+    .card-container fieldset {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        margin-left: 0;
+    }
+}
