@@ -151,16 +151,35 @@
 <script src="../JS/header.js"></script>
 </html>
 <script>
-       function toggleImage() {
+        var currentImage = 1; // Inicia com a imagem 1 exibida
+        var intervalId;
+
+        function toggleImage() {
             var image1 = document.getElementById('image1');
             var image2 = document.getElementById('image2');
 
-            if (image1.style.display === 'block') {
+            if (currentImage === 1) {
                 image1.style.display = 'none';
                 image2.style.display = 'block';
+                currentImage = 2;
             } else {
                 image1.style.display = 'block';
                 image2.style.display = 'none';
+                currentImage = 1;
             }
         }
+
+        // Inicia a troca automática a cada 5 segundos (5000 milissegundos)
+        intervalId = setInterval(toggleImage, 5000);
+
+        // Adiciona evento para pausar a troca automática ao passar o mouse sobre a imagem
+        var imageContainer = document.getElementById('image-container');
+        imageContainer.addEventListener('mouseover', function() {
+            clearInterval(intervalId); // Pausa a troca automática
+        });
+
+        // Adiciona evento para retomar a troca automática ao retirar o mouse da imagem
+        imageContainer.addEventListener('mouseout', function() {
+            intervalId = setInterval(toggleImage, 5000); // Reinicia a troca automática
+        });
     </script>
