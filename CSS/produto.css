@@ -559,6 +559,8 @@
             border-radius: 50%;
             border: none;
             cursor: pointer;
+            color: rgb(25, 136, 3);
+
         }
 
         #toggle-button:hover {
@@ -574,6 +576,5 @@
             height: 100%;
             object-fit: cover;
             display: none;
-            color: rgb(25, 136, 3);
 
         }
