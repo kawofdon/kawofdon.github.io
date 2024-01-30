@@ -41,8 +41,11 @@
   <div class="small-container single-product">
     <div class="row">
       <div class="col-2">
-          <img src="../IMG/produto01.jpg"  id="ProductImg1"  alt="ProductImg2"/>
-          <img src="../IMG/produto02.jpg" id="ProductImg2" alt="ProductImg2">
+         <div class="image-container" id="image-container">
+            <img class="circle-image" id="image1" src="../IMG/produto01.jpg" />
+            <img class="circle-image" id="image2" src="../IMG/produto02.jpg" style="display: none;">
+            <button id="toggle-button" onclick="toggleImage()"></button>
+        </div>
         
 
         <div class="small-img-row">
