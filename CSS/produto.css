@@ -555,12 +555,10 @@
             left: 10px;
             width: 30px;
             height: 30px;
-            background-color: #3498db;
+            background-color:rgb(25, 136, 3);
             border-radius: 50%;
             border: none;
             cursor: pointer;
-            color: rgb(25, 136, 3);
-
         }
 
         #toggle-button:hover {
@@ -575,5 +573,4 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            background-color:rgb(25, 136, 3);
         }
