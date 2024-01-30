@@ -545,3 +545,17 @@
   cursor: pointer;
   background-color: #000;
 }
+ #image-container {
+            position: relative;
+        }
+
+#toggle-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
