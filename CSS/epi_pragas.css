@@ -16,7 +16,7 @@ body, html {
             margin-left: 0; /* Define a margem esquerda como 0 para colocar o vídeo no canto esquerdo */
             float:left; 
             margin:25px;
-            border-radius:50%; 
+            border-radius:40%; 
         }
 .img-principal{
     background-image: url('../IMG/homem-inseticida2.jpg');
