@@ -8,7 +8,13 @@ body, html {
     padding: 0;
     height: 100%;
   }
-
+  video {
+            width: 250px; /* Garante que o vídeo ocupe 100% da largura da janela de visualização */
+            max-width: 640px; /* Define a largura máxima do vídeo */
+            height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção original */
+            display: block;
+            margin-left: 0; /* Define a margem esquerda como 0 para colocar o vídeo no canto esquerdo */
+        }
 .img-principal{
     background-image: url('../IMG/homem-inseticida2.jpg');
     background-size: cover;
