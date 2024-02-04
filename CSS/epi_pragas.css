@@ -17,6 +17,7 @@ body, html {
             float:left; 
             margin:25px;
             border-radius:5px; 
+            shadow-box: 5px; 
         }
 .img-principal{
     background-image: url('../IMG/homem-inseticida2.jpg');
